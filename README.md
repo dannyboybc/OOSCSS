@@ -2,7 +2,7 @@
 
 This is a specification for arranging SCSS files to make CSS more modular.
 
-## Using @mixins as "classes""
+## Using @mixins as "classes"
 
 In its simplest terms, it looks like this:
 
