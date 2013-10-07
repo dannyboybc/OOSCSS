@@ -1,0 +1,13 @@
+@mixin _ellipses() {
+  &:after {
+    content: '\2022\2022\2022';
+    position: absolute;
+    font-size: 30px;
+    left: $gutter;
+    bottom: 15px;
+    border-radius: $gutter;
+    background: grey;
+    padding: 0px 5px;
+    line-height: 30px;
+  }
+}

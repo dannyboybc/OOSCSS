@@ -1,0 +1,43 @@
+@import "lib/library.scss";
+@import "src/modules/modules.scss";
+
+// These are pure import styles for basic tag and class styling
+// This is also where you should include non media query styling
+
+@import "src/reset.scss";
+@import "src/group.scss";
+@import "src/base.scss";
+
+$padding-bottom: 40px;
+
+@media screen and ( max-width: column(4) ) {
+  @include header( column(3), 100px, $light-grey );
+  @include container( column(3), false, $light-grey );
+  @include main-article( $column(1), 100%, $light-grey, false, 0, $padding-bottom );
+  @include main-aside( $column(3), 100%, $light-grey, false, 0, $padding-bottom );
+  @include more( false, "none" );
+}
+
+@media screen and ( min-width: column(4) ) and ( max-width: column(6) ) {
+  @include header( column(4), 100px, $light-grey );
+  @include container( column(4), false, $light-grey );
+  @include main-article( $column(4), 100%, $light-grey, false, 0, $padding-bottom );
+  @include main-aside( $column(4), 100%, $light-grey, false, 0, $padding-bottom );
+  @include more( false, "none" );
+}
+
+@media screen and ( min-width: column(6) ) and ( max-width: column(9) ) {
+  @include header( column(6), 100px, $light-grey );
+  @include container( column(6), false, $light-grey );
+  @include main-article( column(4), 100%, $light-grey, true, $gutter, $padding-bottom );
+  @include main-aside( column(2) - $gutter, 100%, $light-grey, true, 0, $padding-bottom );
+  @include more( false, "none" );
+}
+
+@media screen and ( min-width: column(9) ) {
+  @include header( column(9), 100px, $light-grey );
+  @include container( column(9), false, $light-grey );
+  @include main-article( column(6), 100%, $light-grey, true, $gutter, $padding-bottom );
+  @include main-aside( column(3) - $gutter, 100%, $light-grey, true, 0, $padding-bottom );
+  @include more( true, "inline" );
+}

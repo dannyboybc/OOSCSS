@@ -1,0 +1,9 @@
+@mixin more($visible, $type) {
+  .more {
+    @if $visible {
+      display: #{$type};
+    } @else {
+      display: none;
+    }
+  }
+}

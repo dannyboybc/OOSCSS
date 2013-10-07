@@ -1,0 +1,9 @@
+@mixin _box( $width, $height, $color ) {
+  width: $width;
+
+  @if $height != false {
+    height: $height;
+  }
+
+  background: $color;
+}

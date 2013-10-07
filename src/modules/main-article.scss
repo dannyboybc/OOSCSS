@@ -1,0 +1,17 @@
+@mixin main-article( $width, $height, $color, $float, $margin, $padding ) {
+  .main-article {
+    @include _box($width, false, $color);
+
+    margin-right: $margin;
+    padding-bottom: $padding;
+
+    color: $black;
+
+    @if $float {
+      float: left;
+    }
+
+    position: relative;
+    @include _ellipses();
+  }
+}

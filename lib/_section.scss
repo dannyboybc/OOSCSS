@@ -1,0 +1,4 @@
+@mixin _section($width, $height, $color) {
+  @include _box($width, $height, $color);
+  margin: auto;
+}

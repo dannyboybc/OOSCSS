@@ -1,0 +1,6 @@
+@mixin header($width, $height, $color) {
+  .header {
+    @include _section($width, $height, $color);
+    color: $black;
+  }
+}

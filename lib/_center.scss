@@ -1,0 +1,6 @@
+@mixin _center($height) {
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+  height: $height;
+}

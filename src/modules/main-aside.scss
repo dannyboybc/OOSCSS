@@ -1,0 +1,13 @@
+@mixin main-aside( $width, $height, $color, $float, $margin, $padding ) {
+  .main-aside {
+    @include _box($width, false, $color);
+
+    margin-right: $margin;
+    padding-bottom: $padding;
+    color: $black;
+
+    @if $float {
+      float: left;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@mixin container($width, $height, $color) {
+  .container {
+    @include _section($width, $height, $color);
+    color: #FFF;
+    overflow: hidden;
+  }
+}
