@@ -52,12 +52,13 @@ Normal mixins should be denoted with an underscore
 
 ## Inheritance
 
+```sass
+
 @mixin parent-box(){
 	.parent-box {
 	}
 }
 	
-```sass
 @mixin child-box(){
 	.child-box {
 		@extend .parent-box;
