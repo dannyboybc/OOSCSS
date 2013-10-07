@@ -68,9 +68,9 @@ Normal mixins should be denoted with an underscore
 	
 ## Responsive implemenation
 
-To implement responsive elements:
+### Media queries in main.scss
 
-### Media queries in style.main.scss
+To implement responsive elements:
 
 `box.class.scss`
 
@@ -84,7 +84,7 @@ To implement responsive elements:
 }
 ```
 
-`style.main.scss`
+`main.scss`
 
 ```sass
 // style.main.scss
