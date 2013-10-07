@@ -58,7 +58,7 @@ Normal mixins should be denoted with an underscore
 	
 ## Responsive implemenation
 
-There are two approaches to implementing responsive elements:
+To implement responsive elements:
 
 ### Media queries in style.main.scss
 
